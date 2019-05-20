@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let DateRegularExp = function (str) {
+        let regexp = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[1-9])|((1)[0-2]))(\/)\d{4}$/;
+        if(regexp.test(str)){
+            return "Dung"
+        }else {
+            return "Sai"
+        }
+    };
+    let date1="31/01/2019";
+    let date2="20/5/2019";
+    console.log(DateRegularExp(date1));
+    console.log(DateRegularExp(date2));
+</script>
+
+</body>
+</html>

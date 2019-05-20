@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let countVowels = function(str){
+        let count = str.match(/[aeiou]/gi);
+        document.write("co "+ count.length+" nguyen am trong "+str+" la "+count+"<br>")
+    };
+    let countConsonant = function(str){
+        let count = str.match(/[^aeiou]/gi);
+        document.write("co "+ count.length+" phu am trong "+str+" la "+count)
+    };
+    let letter ="Abcdefeee";
+    countVowels(letter);
+    countConsonant(letter);
+
+</script>
+
+</body>
+</html>
